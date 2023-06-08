@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import PostTemplate from "./components/PostTemplate";
+
+const style = {
+  bg: `h-screen w-screen p-4 bg-gradient-to-b from-[gray] to-[white]`,
+  container: `bg-opacity-75 bg-slate-100 w-10/12 m-auto rounded-md shadow-xl p-4 mb-4`,
+  heading: `text-xl text-center mb-4`,
+  todohead: `text-center mt-4 mb-4`,
+  span: `ml-4`,
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={style.bg}>
+      <header>
+        <div className={style.container}>
+        <h1>My Personal Blog</h1>
+        </div>
       </header>
+      <body>
+      <PostTemplate />
+      </body>
     </div>
   );
 }
