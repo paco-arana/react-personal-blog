@@ -19,6 +19,7 @@ function App() {
       </header>
       <body>
       <PostTemplate />
+      <PostTemplate />
       </body>
     </div>
   );

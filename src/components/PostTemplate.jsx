@@ -13,6 +13,8 @@ const PostTemplate = () => {
             {showPost ? (
                 <div>
                     <p>Placeholder text</p>
+                    <p>Placeholder text</p>
+                    <p>Placeholder text</p>
                     <button onClick={() => setShowPost(false)}>See less</button>
                 </div>
             ) : (
